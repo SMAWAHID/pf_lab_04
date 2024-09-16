@@ -1,10 +1,10 @@
-//Create a calculator asking for operator (+ or – or * or /) and operands and performs calculation
+//Create a calculator asking for operator (+ or â€“ or * or /) and operands and performs calculation
 
 #include <stdio.h>
 
 int main(){
 	int num1, num2, sum, diff, division, product;
-	char Operators; // Enter +, -, *, /
+	char Operators; 
 	
 	printf("Enter a operator: ");
 	scanf("%c", &Operators);
