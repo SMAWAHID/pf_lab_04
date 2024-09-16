@@ -42,7 +42,7 @@ int main() {
         default:
             printf("Invalid choice for snack 1.\n");
             return 2;
-    }
+	}
 
     if (item_type >= 2) {
         printf("Enter second snack for your order: ");
@@ -70,8 +70,8 @@ int main() {
             default:
                 printf("Invalid choice for snack 2.\n");
                 return 3;
-        }
-    }
+		}
+   		}
 
     if (item_type >= 3) {
         printf("Enter third snack for your order: ");
@@ -99,8 +99,8 @@ int main() {
             default:
                 printf("Invalid choice for snack 3.\n");
                 return 4;
-        }
-    }
+		}
+		}
 
     if (item_type == 4) {
         printf("Enter fourth snack for your order: ");
@@ -128,17 +128,21 @@ int main() {
             default:
                 printf("Invalid choice for snack 4.\n");
                 return 5;
-        }
-    }
+       		}
+    		}
 	
-		if (total_burgers > 0)
+		if (total_burgers > 0){
     		printf("%d Burger(s) value %d PKR\n", totalBurgers, totalBurgers * 200);
-		if (total_fries > 0)
+		}
+		if (total_fries > 0){
 		    printf("%d French Fries value %d PKR\n", totalFries, totalFries * 50);
-		if (total_pizzas > 0)
+		}
+		if (total_pizzas > 0){
 		    printf("%d Pizza(s) value %d PKR\n", totalPizzas, totalPizzas * 500);
-		if (total_sandwiches > 0)
+		}
+		if (total_sandwiches > 0){
 		    printf("%d Sandwich(es) value %d PKR\n", totalSandwiches, totalSandwiches * 150);
+		}
     
     printf("Total charges for your order: Rs. %d\n", total);
     return 0;
